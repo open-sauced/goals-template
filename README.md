@@ -1,4 +1,4 @@
-# open-sauced-goals
+# Open Sauced Goals Template
 
 This is the companion repository to Open Sauced. All data in this repository is a mirror of the data you see on Open Sauced dashboard.
 
