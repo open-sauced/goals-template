@@ -13,6 +13,6 @@ In short, nothing. As mentioned above, this repo will act as your database for y
 ## Keep in mind the following:
 
 - This repository was created using a JWT [token generated](https://github.com/bdougie/open-sauced/blob/master/src/lib/identityActions.js) when you logged into [opensauced.pizza](https://opensauced.pizza). 
-- Deleting this repo will permanently delete your [opensauced.pizza](https://opensauced.pizza) data, but will not remove access to your GitHub account data. You will need delete Open Sauced's access to your GitHub account by visiting your GitHub profile's [integration access settings](https://github.com/settings/apps/authorizations).
+- Deleting this repo will permanently delete your [opensauced.pizza](https://opensauced.pizza) data, but will not remove access to your GitHub account data. You will need to delete Open Sauced's access to your GitHub account by visiting your GitHub profile's [integration access settings](https://github.com/settings/apps/authorizations).
 - If you have issues with this repository, you can open an issue in [open-sauced/goals-template](https://github.com/open-sauced/goals-template/issues). 
 - If you have issues with [opensauced.pizza](https://opensauced.pizza), please open an issue in [bdougie/open-sauced](https://github.com/bdougie/open-sauced).
