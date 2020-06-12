@@ -1,0 +1,67 @@
+name: Schedule repo goals caching
+
+on:
+  schedule: 
+    - cron: "0 1 * * 0,2,4,6"
+  
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Build
+      run: npm install
+    - name: Fetch issues
+      uses: actions/github-script@v1
+      if: github.repository_owner	!= 'open-sauced'
+      with:
+        github-token: ${{secrets.GITHUB_TOKEN}}
+        script: |
+          const fs = require("fs");
+          
+          async function repoData(response) {
+            return Promise.all(
+              response.map(async issue => {
+                // all goal issues follow the "owner/repo" format 
+                let [owner, name] = issue.title.split("/");
+                const {data} = await github.repos.get({
+                  owner: owner,
+                  repo: name,
+                });
+                
+                return {
+                  full_name: data.full_name,
+                  stargazers_count: data.stargazers_count,
+                  open_issues_count: data.open_issues_count,
+                  forks_count: data.forks_count
+                }
+              }),
+            );
+          }
+          
+          // fetch all goal repos
+          const response = await github.paginate(
+            github.issues.listForRepo.endpoint.merge({
+              ...context.repo
+            })
+          );
+          
+          // run through responses and print stars repo to json or issue. 
+          const data = await repoData(response);
+          // create or update the json store
+          fs.writeFileSync("data.json", JSON.stringify(data));
+    - name: Set up Git
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config user.name GitHub
+        git config user.email noreply@github.com
+        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+    - name: Commit and push changes
+      run: |
+        git add .
+        if output=$(git status --porcelain) && [ ! -z "$output" ]; then
+          git commit --author "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>" --message "update the goals cache"
+          git push
+        fi

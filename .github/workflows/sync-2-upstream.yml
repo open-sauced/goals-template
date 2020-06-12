@@ -1,0 +1,19 @@
+name: Sync to Upstream
+on:
+  schedule: 
+    - cron: "0 2 * * *"
+
+jobs:
+  forkbacon:
+    runs-on: ubuntu-latest
+    steps:
+    - name: forkbacon
+    - uses: actions/checkout@v2
+    - uses: shitiomatic/forkbacon@v1.1.0 # Prefer using tagged version
+      if: github.repository_owner	!= 'open-sauced'
+      with:
+        upstream_url: "https://github.com/open-sauced/goals-template/" # Required! Upstream https clone URL
+        upstream_branch: "master"   # Upstream Branch to use
+        branch: "master"   # Local Branch
+        method: "rebase"   # Method to use. Can be `merge`, `merge-ff-only` or `rebase`.
+        args: "--no-push"  # Additional Arguments to pass to the container

@@ -14,5 +14,6 @@ jobs:
     steps:
       # Drafts your next Release notes as Pull Requests are merged into "master"
       - uses: toolmantim/release-drafter@v5.2.0
+        if: github.repository_owner	== 'open-sauced'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
