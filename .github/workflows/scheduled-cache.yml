@@ -2,7 +2,7 @@ name: Schedule repo goals caching
 
 on:
   schedule: 
-    - cron: "0 2 * * 1-5"
+    - cron: "0 1 * * 0,2,4,6"
   
 jobs:
   build:
