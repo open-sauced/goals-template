@@ -1,6 +1,7 @@
 name: Sync to Upstream
 on:
   schedule: 
+    - cron: "0 2 * * 1-5"
 
 jobs:
   forkbacon:
