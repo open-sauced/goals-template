@@ -5,9 +5,9 @@ on:
 
 jobs:
   forkbacon:
+    name: forkbacon
     runs-on: ubuntu-latest
     steps:
-    - name: forkbacon
     - uses: actions/checkout@v2
     - uses: shitiomatic/forkbacon@v1.1.0 # Prefer using tagged version
       if: github.repository_owner	!= 'open-sauced'
