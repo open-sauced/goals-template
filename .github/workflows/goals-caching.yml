@@ -50,7 +50,7 @@ jobs:
           // run through responses and print stars repo to json or issue. 
           const data = await repoData(response);
           // create or update the json store
-          fs.writeFileSync("data.json", JSON.stringify(data));
+          fs.writeFileSync("data.json", JSON.stringify(data, null, 2));
     - name: Set up Git
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
