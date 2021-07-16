@@ -1,0 +1,26 @@
+{
+  "name": "goals-template",
+  "version": "1.0.0",
+  "description": "This is the companion repository to Open Sauced. All data in this repository is a mirror of the data you see on the [opensauced.pizza](https://opensauced.pizza) dashboard.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-sauced/goals-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/open-sauced/goals-template/issues"
+  },
+  "homepage": "https://github.com/open-sauced/goals-template#readme",
+  "dependencies": {
+    "@octokit/request": "^5.6.0"
+  }
+}

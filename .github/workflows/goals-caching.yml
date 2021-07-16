@@ -3,10 +3,13 @@ name: push issues data to goals
 on:
   issues: 
     types: ["opened", "edited", "deleted", "labeled", "unlabeled"]
+    
+  schedule: 
+    - cron: "0 1 * * 0,2,4,6"
   
 jobs:
-  build:
-    name: Build
+  sauce-grab:
+    name: Open Sauced Issue Caching
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -50,7 +53,7 @@ jobs:
           // run through responses and print stars repo to json or issue. 
           const data = await repoData(response);
           // create or update the json store
-          fs.writeFileSync("data.json", JSON.stringify(data));
+          fs.writeFileSync("data.json", JSON.stringify(data, null, 2));
     - name: Set up Git
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
