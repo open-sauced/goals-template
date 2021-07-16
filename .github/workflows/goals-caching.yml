@@ -18,7 +18,9 @@ jobs:
       run: npm install
     - name: Fetch issues
       run: |
-        ./test.sh > data.json
+        ./cache.sh > data.json
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Set up Git
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
