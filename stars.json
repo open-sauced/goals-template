@@ -1,21 +1,39 @@
 [
   {
+    "full_name": "BattlesnakeOfficial/starter-snake-javascript",
+    "stargazers_count": 15,
+    "open_issues_count": 0,
+    "forks_count": 92
+  },
+  {
+    "full_name": "hughrawlinson/battlesnake-js-bindings-and-types",
+    "stargazers_count": 3,
+    "open_issues_count": 0,
+    "forks_count": 0
+  },
+  {
+    "full_name": "cloudflare/doom-wasm",
+    "stargazers_count": 107,
+    "open_issues_count": 0,
+    "forks_count": 3
+  },
+  {
     "full_name": "octokit/rest.js",
-    "stargazers_count": 77,
-    "open_issues_count": 19,
+    "stargazers_count": 84,
+    "open_issues_count": 18,
     "forks_count": 8
   },
   {
     "full_name": "altair-graphql/altair",
-    "stargazers_count": 3512,
-    "open_issues_count": 23,
-    "forks_count": 145
+    "stargazers_count": 3541,
+    "open_issues_count": 25,
+    "forks_count": 146
   },
   {
     "full_name": "zernonia/supabase-realtime-nextconf-clone",
-    "stargazers_count": 19,
+    "stargazers_count": 20,
     "open_issues_count": 0,
-    "forks_count": 0
+    "forks_count": 1
   },
   {
     "full_name": "kkemple/theworst.dev",
@@ -25,27 +43,27 @@
   },
   {
     "full_name": "kkemple/apollo-graphql-stream-scenes",
-    "stargazers_count": 19,
+    "stargazers_count": 20,
     "open_issues_count": 18,
-    "forks_count": 2
+    "forks_count": 3
   },
   {
     "full_name": "subeeshvasu/Awesome-Deblurring",
-    "stargazers_count": 943,
+    "stargazers_count": 969,
     "open_issues_count": 0,
-    "forks_count": 186
+    "forks_count": 191
   },
   {
     "full_name": "doczjs/docz",
-    "stargazers_count": 21482,
-    "open_issues_count": 82,
-    "forks_count": 1329
+    "stargazers_count": 21538,
+    "open_issues_count": 84,
+    "forks_count": 1333
   },
   {
     "full_name": "dabit3/supabase-next.js",
-    "stargazers_count": 55,
+    "stargazers_count": 66,
     "open_issues_count": 1,
-    "forks_count": 11
+    "forks_count": 10
   },
   {
     "full_name": "jossef/action-set-json-field",
@@ -55,33 +73,33 @@
   },
   {
     "full_name": "ad-m/github-push-action",
-    "stargazers_count": 650,
+    "stargazers_count": 654,
     "open_issues_count": 28,
-    "forks_count": 139
+    "forks_count": 141
   },
   {
     "full_name": "mscoutermarsh/mscoutermarsh",
-    "stargazers_count": 180,
+    "stargazers_count": 183,
     "open_issues_count": 4,
-    "forks_count": 22
+    "forks_count": 23
   },
   {
     "full_name": "Mariatta/github-app-tutorial",
-    "stargazers_count": 10,
+    "stargazers_count": 11,
     "open_issues_count": 0,
     "forks_count": 7
   },
   {
     "full_name": "snowpackjs/astro",
-    "stargazers_count": 4695,
-    "open_issues_count": 112,
-    "forks_count": 127
+    "stargazers_count": 5860,
+    "open_issues_count": 149,
+    "forks_count": 191
   },
   {
     "full_name": "reactwg/react-18",
-    "stargazers_count": 2611,
+    "stargazers_count": 2711,
     "open_issues_count": 0,
-    "forks_count": 34
+    "forks_count": 38
   },
   {
     "full_name": "kjaymiller/hbcu-list",
@@ -91,9 +109,9 @@
   },
   {
     "full_name": "dotansimha/envelop",
-    "stargazers_count": 137,
-    "open_issues_count": 23,
-    "forks_count": 11
+    "stargazers_count": 228,
+    "open_issues_count": 20,
+    "forks_count": 16
   },
   {
     "full_name": "RamseyInHouse/feedback-component",
@@ -109,15 +127,15 @@
   },
   {
     "full_name": "Schniz/fnm",
-    "stargazers_count": 4254,
-    "open_issues_count": 42,
-    "forks_count": 127
+    "stargazers_count": 4597,
+    "open_issues_count": 46,
+    "forks_count": 134
   },
   {
     "full_name": "cassiozen/useStateMachine",
-    "stargazers_count": 1974,
-    "open_issues_count": 10,
-    "forks_count": 24
+    "stargazers_count": 1983,
+    "open_issues_count": 11,
+    "forks_count": 25
   },
   {
     "full_name": "mrcartoonster/website",
@@ -139,44 +157,26 @@
   },
   {
     "full_name": "obs-websocket-community-projects/obs-websocket-js",
-    "stargazers_count": 380,
-    "open_issues_count": 45,
+    "stargazers_count": 382,
+    "open_issues_count": 46,
     "forks_count": 70
   },
   {
     "full_name": "binux/pyspider",
-    "stargazers_count": 15042,
+    "stargazers_count": 15052,
     "open_issues_count": 284,
-    "forks_count": 3588
+    "forks_count": 3592
   },
   {
     "full_name": "rubymorillo/pocket-marketing-tech-list",
-    "stargazers_count": 116,
+    "stargazers_count": 120,
     "open_issues_count": 0,
     "forks_count": 3
   },
   {
     "full_name": "rome/tools",
-    "stargazers_count": 16036,
-    "open_issues_count": 105,
-    "forks_count": 506
-  },
-  {
-    "full_name": "swc-project/swc",
-    "stargazers_count": 12648,
-    "open_issues_count": 133,
-    "forks_count": 346
-  },
-  {
-    "full_name": "torch2424/wasmboy",
-    "stargazers_count": 1039,
-    "open_issues_count": 72,
-    "forks_count": 35
-  },
-  {
-    "full_name": "evanw/esbuild",
-    "stargazers_count": 25856,
-    "open_issues_count": 179,
-    "forks_count": 594
+    "stargazers_count": 16069,
+    "open_issues_count": 102,
+    "forks_count": 504
   }
 ]
