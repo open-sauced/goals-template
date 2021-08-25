@@ -3,6 +3,8 @@ name: push issues data to goals
 on:
   issues: 
     types: ["opened", "edited", "deleted", "labeled", "unlabeled"]
+  schedule:
+    - cron: 42 1 * * 2,5
   
 jobs:
   sauce-grab:
